@@ -25,12 +25,15 @@ function search() {
 // Triggered by this line: request.execute(onSearchResponse);
 function onSearchResponse(response) {
     var responseString = JSON.stringify(response, '', 2);
-    v/*ar txt = "";
+    /*var txt = "";
     var myObj = JSON.parse(responseString);
         txt += "<div>"
         for (var x in myObj.items) {
          
-            txt += "<b>" + x.etag+"</b><br>";
+            switch(x.id.kind){
+                case 'youtube#video':
+                    
+            }
           }
         
         txt += "</div>"*/
